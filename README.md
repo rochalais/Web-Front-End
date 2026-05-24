@@ -19,6 +19,6 @@ Web-Front-End/
 
 Integrantes da Equipe
 
-- Gabrielle 
+- Gabrielle Rodrigues Nascimento
 - Laís Joana Marcondes da Rocha
 - Nicole Gimenez Machado
