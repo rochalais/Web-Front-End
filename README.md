@@ -11,8 +11,28 @@ Web-Front-End/
 │
 ├── index.html
 │
-├── img/
-│   ├── banner.jpg
+├── cadastro.html
+│
+├── style.css
+│
+├── cadastro.css
+│
+├── imagens/
+│   ├── adotar01.jpg
+│   ├── adotar02.jpg
+│   ├── adotar03.jpg
+│   ├── adotar04.jpg
+│   ├── adotar04.avif
+│   ├── adotar05.jpg
+│   ├── adotar06.jpg
+│   ├── adotar07.jpg
+│   ├── adotar08.jpg
+│   ├── adotar09.jpg
+│   ├── bannersite.png
+│   ├── iconfacebook.png
+│   ├── iconinstagram.png
+│   ├── icontiktok.png
+│   └── logo2.png
 │
 └── README.md
 ```
