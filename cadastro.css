@@ -1,0 +1,66 @@
+#cadastroAnimal {
+  background-color: #fff7f2;
+  padding: 50px 8%;
+  text-align: center;
+}
+
+#cadastroAnimal h1 {
+  color: #7a3e3e;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#cadastroAnimal form {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+#cadastroAnimal label {
+  font-weight: bold;
+  color: #7a3e3e;
+  display: block;
+  margin-top: 15px;
+}
+
+#cadastroAnimal input,
+#cadastroAnimal select,
+#cadastroAnimal textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#cadastroAnimal textarea {
+  resize: vertical;
+}
+
+#cadastroAnimal button {
+  background-color: #ff7b89;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+#cadastroAnimal button:hover {
+  background-color: #e85d75;
+}
+
+@media (max-width: 768px) {
+  #cadastroAnimal form {
+    width: 95%;
+    padding: 20px;
+  }
+}

@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call,house,mail" />
     <title>Miaudota</title>
 </head>
 <body>
 <!--cabeçalho/menu-->
   <header>
-    <img src="imagens/header.png" alt="Miaudota">
+    <img class="logo" src="imagens/logo2.png" alt="Miaudota">
     <nav>
       <ul>
-        <li>Início</li>
-        <li>Adote</li>
-        <li>Perdidos</li>
-        <li>Reportar resgate</li>
-        <li>Cadastro</li>
-        <li>Contato</li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#adote">Adote</a></li>
+        <li><a href="#perdidos">Perdidos</a></li>
+        <li><a href="#resgate">Reportar resgate</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="#contato">Contato</a></li>
      </ul>
     </nav>
   </header>
 <!--Seção 1-->
-  <section>
-    <h2>Encontre seu novo melhor amigo</h2>
-    <div>
+  <section id="inicio" class="secao1">
+    <div class ="conteudo-secao1">
+      <h1>Encontre seu novo melhor amigo</h1>
       <p>Ajude um animal a encontrar seu lar</p>
-      <div>
+      <div class="botoessecao1">
         <button>Adote um pet</button>
         <button>Reportar resgate</button>
         <button>Cadê meu dono?</button>
@@ -33,108 +35,104 @@
     </div>
   </section>
 <!--Seção 2-->
-  <section>
-    <h2>Pets disponíveis para a adoção</h2>
+  <section id="adote" class="secao2">
+    <h2 class="titulosecao2">Pets disponíveis para a adoção</h2>
     <div class="divCards">
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"descrição pet 1"</p>
+        <img src="imagens/adotar01.jpg" alt="Animal 1" width="200" height="150">
+        <h3>Paçoca</h3>
+        <p>Um machinho, filhote, muito brincalhão e animado.</p>
         <button>Adotar</button>
       </div>
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"descrição pet 1"</p>
+        <img src="imagens/adotar02.jpg" alt="Animal 2">
+        <h3>Lulu</h3>
+        <p>Fêmea de porte pequeno, muito carinhosa e quietinha.</p>
         <button>Adotar</button>
       </div>
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"descrição pet 1"</p>
+        <img src="imagens/adotar03.jpg" alt="Animal 3">
+        <h3>Juca</h3>
+        <p>Caramelo adulto, de porte médio, muito gentil e leal.</p>
         <button>Adotar</button>
       </div>
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"descrição pet 1"</p>
+        <img src="imagens/adotar04.jpg" alt="Animal 4">
+        <h3>Ciça</h3>
+        <p>Gatinha fêmea observadora e independente.</p>
         <button>Adotar</button>
       </div>
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"descrição pet 1"</p>
+        <img src="imagens/adotar05.jpg" alt="Animal 5">
+        <h3>Costelinha</h3>
+        <p>Machinho filhote, grande e muito corajoso.</p>
         <button>Adotar</button>
       </div>
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"descrição pet 1"</p>
+        <img src="imagens/adotar08.jpg" alt="Animal 6 ">
+        <h3>Sorte</h3>
+        <p>Gatinha companheira e muito carinhosa.</p>
         <button>Adotar</button>
       </div>
     </div>
   </section>
 <!--Seção 3-->
-  <section>
-    <h2>Cadê meu dono?</h2>
+  <section id="perdidos" class="secao3">
+    <h2 class="titulo-secao3">Cadê meu dono?</h2>
     <div class="divCards">
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"Último local onde foi visto:"</p>
+        <img src="imagens/adotar07.jpg" alt="Perdido 1">
+        <h3>Último local onde foi visto:</h3>
+        <p>Rua algodão doce, 432 - Bairro dos gatos</p>
         <button>Encontrei!</button>
       </div>
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"Último local onde foi visto:"</p>
+        <img src="imagens/adotar06.jpg" alt="Perdido 2">
+        <h3>Último local onde foi visto:</h3>
+        <p>Rua pé de caqui, 234 - Bairro dos cachorros</p>
         <button>Encontrei!</button>
       </div>
       <div class="card">
-        <img src="imagens/card1.png" alt="Card 1">
-        <h3>pet 1</h3>
-        <p>"Último local onde foi visto:"</p>
+        <img src="imagens/adotar09.jpg" alt="Perdido 3">
+        <h3>Último local onde foi visto:</h3>
+        <p>Rua dos animais, 567 - Bairro dos bichos</p>
         <button>Encontrei!</button>
       </div>
     </div>
   </section>
   <!--seção 4-->
-  <section>
-    <h2>Como ajudar?</h2>
-    <div class="divCards">
-      <div class="card">
-        <h3>Denunciar abandono</h3>
-        <button>Clique aqui</button>
-      </div>
-      <div class="card">
-        <h3>Ofercer lar temporário</h3>
-        <button>Clique aqui</button>
-      </div>
-      <div class="card">
-        <h3>Ser voluntário</h3>
-        <button>Clique aqui</button>
-      </div>
+  <section id="resgate" class="secao4">
+    <h2 class="titulo-secao4">Como ajudar?</h2>
+    <div class="botoessecao4">
+        <button>Denunciar abandono</button>
+        <button>Ofercer lar temporário</button>
+        <button>Ser voluntário</button>
     </div>
   </section>
-  <section>
-    <h2>Contato</h2>
+  <section id="contato" class="secao5">
+    <h2 class="titulosecao5">Contato</h2>
     <div class="divCards">
       <div class="card">
+        <img src="imagens/iconinstagram.png" alt="Instagram" width="150" height="150">
         <h3>Instagram</h3>
         <p><a href="https://www.instagram.com" target="_blank">@miaudota</a></p>
       </div>
       <div class="card">
+        <img src="imagens/icontiktok.png" alt="TikTok" width="150" height="150">
         <h3>TikTok</h3>
         <p><a href="https://www.tiktok.com" target="_blank">@miaudota</a></p>
       </div>
       <div class="card">
+        <img src="imagens/iconfacebook.png" alt="Facebook" width="150" height="150">
         <h3>Facebook</h3>
         <p><a href="https://www.facebook.com" target="_blank">@miaudota</a></p>
       </div>
     </div>
-    <p>Telefone: (11) 1234-5678</p>
-    <p>Email: contato@miaudota.com</p>
-    <p>Endereço: Rua dos gatos, 123 - Bairro dos cachorros</p>
+    <div class="contatos">
+      <p><span class="material-symbols-outlined">call</span>Telefone: (11) 1234-5678</p>
+      <p><span class="material-symbols-outlined">mail</span>Email: contato@miaudota.com</p>
+      <p><span class="material-symbols-outlined">house</span>Endereço: Rua dos gatos, 123 - Bairro dos cachorros</p>
+    </div>
   </section>
   <footer>
     <p><a href="https://rochalais.github.io/front_end/" target="_blank">Curriculum Laís</a></p>

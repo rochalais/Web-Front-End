@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+  <section id="cadastroAnimal">
+    <h1>Cadastro de Animais Perdidos</h1>
+    <form>
+      <div>
+        <label for="nomeAnimal">Nome do animal:</label><br>
+        <input type="text" id="nomeAnimal" name="nomeAnimal" placeholder="Ex: Mel, Thor, Nina">
+      </div>
+      <br>
+      <div>
+        <label for="tipoAnimal">Tipo de animal:</label><br>
+        <select id="tipoAnimal" name="tipoAnimal">
+          <option value="">Selecione</option>
+          <option value="cachorro">Cachorro</option>
+          <option value="gato">Gato</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="raca">Raça:</label><br>
+        <input type="text" id="raca" name="raca" placeholder="Ex: Vira-lata, Poodle, Siamês">
+      </div>
+      <br>
+      <div>
+        <label for="cor">Cor do animal:</label><br>
+        <input type="text" id="cor" name="cor" placeholder="Ex: Preto, branco, caramelo">
+      </div>
+      <br>
+      <div>
+        <label for="porte">Porte:</label><br>
+        <select id="porte" name="porte">
+          <option value="">Selecione</option>
+          <option value="pequeno">Pequeno</option>
+          <option value="medio">Médio</option>
+          <option value="grande">Grande</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="localPerdido">Último local onde foi visto:</label><br>
+        <input type="text" id="localPerdido" name="localPerdido" placeholder="Rua, bairro ou ponto de referência">
+      </div>
+      <br>
+      <div>
+        <label for="dataPerdido">Data em que desapareceu:</label><br>
+        <input type="date" id="dataPerdido" name="dataPerdido">
+      </div>
+      <br>
+      <div>
+        <label for="descricao">Descrição do animal:</label><br>
+        <textarea id="descricao" name="descricao" rows="5" cols="40" placeholder="Ex: usa coleira vermelha, é dócil, tem mancha no rosto..."></textarea>
+      </div>
+      <br>
+      <div>
+        <label for="fotoAnimal">Foto do animal:</label><br>
+        <input type="file" id="fotoAnimal" name="fotoAnimal">
+      </div>
+      <br>
+      <h2>Dados do responsável</h2>
+      <div>
+        <label for="nomeResponsavel">Nome do responsável:</label><br>
+        <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Seu nome">
+      </div>
+
+      <br>
+      <div>
+        <label for="telefone">Telefone para contato:</label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+      </div>
+      <br>
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="seuemail@email.com">
+      </div>
+      <br>
+      <button type="submit">Cadastrar animal perdido</button>
+      <button type="reset">Limpar cadastro</button>
+    </form>
+  </section>
+</body>

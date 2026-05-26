@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@400;700&family=Poppins:wght@100;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Cause", sans-serif;
+  font-size: 3vw;
+  color: #657E63;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: "Cause", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F4F2E9;
+  color: #333;
+}
+
+header {
+  background-color: #657E63;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+  background-color: #657E63;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #4d664d;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 0px;
+  border-radius: 10%;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+}
+
+.secao1 {
+  background-image: url('imagens/bannersite.png');
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.secao1 .conteudo-secao1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.secao1 p {
+  font-size: 2vw;
+  color: #333;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.secao1 .botoessecao1 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.secao1 .botoessecao1 button {
+  padding: 10px 20px;
+  font-size: 1.2vw;
+  color: #fff;
+  background-color: #657E63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secao1 .botoessecao1 button:hover {
+  background-color: #4d664d;
+  opacity: 1;
+}
+
+  .titulosecao2 {
+    font-size: 52px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    background-color: rgba(148, 173, 146, 0.5);
+    border-radius: 30px;
+    padding: 10px 30px ;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.secao2 {
+  align-items: center;
+  background-color: #F4F2E9;
+  padding: 20px;
+}
+
+.secao2 .divCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.secao2 .divCards .card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 32%;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.secao2 .divCards .card img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.secao2 .divCards .card h3 {
+  font-size: 1.5vw;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.secao2 .divCards .card p {
+  font-size: 1vw;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.secao2 .divCards .card button {
+  padding: 10px 20px;
+  font-size: 1vw;
+  color: #fff;
+  background-color: #657E63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secao2 .divCards .card button:hover {
+  background-color: #4d664d;
+  opacity: 1;
+}
+
+.secao3 {
+  padding: 20px;
+}
+
+.secao3 .titulo-secao3 {
+  font-size: 52px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  background-color: rgba(148, 173, 146, 0.5);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.secao3 .divCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.secao3 .card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 32%;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.secao3 .card img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.secao3 .card button {
+  padding: 10px 20px;
+  font-size: 1vw;
+  color: #fff;
+  background-color: #657E63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secao3 .card button:hover {
+  background-color: #4d664d;
+  opacity: 1;
+}
+
+.secao4 {
+  padding: 20px;
+  align-items: center;
+}
+
+.secao4 .titulo-secao4 {
+  font-size: 52px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  background-color: rgba(148, 173, 146, 0.5);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.secao4 .botoessecao4 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+.secao4 .botoessecao4 button {
+  padding: 30px 20px;
+  font-size: 30px;
+  color: #fff;
+  background-color: #657E63;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 32%;
+}
+
+.secao4 .botoessecao4 button:hover {
+  background-color: #4d664d;
+  opacity: 1;
+}
+
+.secao5 {
+  padding: 20px;
+  align-items: center;
+}
+
+.secao5 .titulosecao5 {
+  font-size: 52px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  background-color: rgba(148, 173, 146, 0.5);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.secao5 .divCards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.secao5 .divCards .card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.secao5 .divCards .card h3 {
+  font-size: 1.5vw;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.secao5 .divCards .card p {
+  font-size: 1vw;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.secao5 .contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secao5 .contatos p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
