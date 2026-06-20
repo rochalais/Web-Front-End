@@ -1,0 +1,323 @@
+:root {
+    --cor-fundo: #f4f7f6;
+    --cor-texto: #333;
+    --cor-primaria: #657E63;
+    --cor-secundaria: #8bae7a;
+    --cor-branco: #ffffff;
+    --cor-texto-claro: #ffffff;
+}
+
+body.dark {
+    --cor-fundo: #1a1a1a;
+    --cor-texto: #e4e4e4;
+    --cor-primaria: #4a7c59;
+    --cor-secundaria: #8bae7a;
+    --cor-branco: #1e1e1e;
+}
+
+body.contraste-7-1 {
+    background-color: #000000 !important;
+    color: #ffff66 !important;
+}
+
+body.contraste-7-1 * {
+    background-color: #000000 !important;
+    color: #ffff66 !important;
+    border-color: #ffff66 !important;
+}
+
+body.contraste-7-1 header {
+    background-color: #111111 !important;
+    color: #ffff66 !important;
+}
+
+body.contraste-7-1 footer {
+    background-color: #111111 !important;
+    color: #ffff66 !important;
+}
+
+body.contraste-7-1 button,
+body.contraste-7-1 a {
+    background-color: #000000 !important;
+    color: #ffff66 !important;
+    outline: 3px solid #ffff66 !important;
+    outline-offset: 2px !important;
+}
+
+body.contraste-7-1 button:hover,
+body.contraste-7-1 a:hover {
+    background-color: #1a1a1a !important;
+    outline: 3px solid #ffff00 !important;
+}
+
+body.contraste-7-1 h1,
+body.contraste-7-1 h2,
+body.contraste-7-1 h3 {
+    color: #ffff66 !important;
+}
+
+body.contraste-7-1 input,
+body.contraste-7-1 textarea,
+body.contraste-7-1 select {
+    background-color: #000000 !important;
+    color: #ffff66 !important;
+    border: 2px solid #ffff66 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+header a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+header a:hover {
+    opacity: 0.8;
+}
+
+header button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-acessibilidade {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-branco);
+    color: var(--cor-primaria);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    min-height: 44px;
+}
+
+.btn-acessibilidade:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    transform: translateY(-2px);
+}
+
+.btn-acessibilidade:focus {
+    outline: 3px solid var(--cor-primaria);
+    outline-offset: 2px;
+}
+
+body.contraste-7-1 .btn-acessibilidade {
+    background-color: #000000 !important;
+    color: #ffff66 !important;
+    border-color: #ffff66 !important;
+}
+
+body.contraste-7-1 .btn-acessibilidade:hover {
+    background-color: #1a1a1a !important;
+    color: #ffff00 !important;
+}
+
+/* Sincroniza aria-pressed com estilo (conforme PDF) */
+.btn-acessibilidade[aria-pressed="true"] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+}
+
+body.contraste-7-1 .btn-acessibilidade[aria-pressed="true"] {
+    background-color: #1a1a1a !important;
+    color: #ffff00 !important;
+    border-color: #ffff00 !important;
+}
+
+.acessibilidade-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--cor-texto-claro);
+}
+
+.acessibilidade-info span {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.card {
+    background-color: var(--cor-branco);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.contraste-7-1 .card {
+    background-color: #111111 !important;
+    border-color: #ffff66 !important;
+}
+
+input,
+textarea,
+select {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 4px;
+    font-family: inherit;
+    min-height: 44px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid var(--cor-primaria);
+    outline-offset: 2px;
+    border-color: var(--cor-secundaria);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--cor-texto);
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    header ul {
+        margin-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .acessibilidade-info {
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media print {
+    .btn-acessibilidade,
+    .acessibilidade-info {
+        display: none;
+    }
+    
+    body.contraste-7-1 {
+        background-color: white !important;
+        color: black !important;
+    }
+}

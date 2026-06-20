@@ -150,10 +150,11 @@ section {
 }
 
 .secao2 .divCards .card img {
-  width: 500px;
-  height: 350px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
+  max-width: 500px;
 }
 
 .secao2 .divCards .card h3 {
@@ -218,10 +219,11 @@ section {
 }
 
 .secao3 .card img {
-  width: 500px;
-  height: 350px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
+  max-width: 500px;
 }
 
 .secao3 .card button {
@@ -337,4 +339,3 @@ section {
   align-items: center;
   gap: 4px;
 }
-

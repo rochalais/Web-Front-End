@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="acessibilidade.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call,house,mail" />
     <title>Miaudota</title>
 </head>
@@ -16,9 +17,13 @@
         <li><a href="#inicio">Início</a></li>
         <li><a href="#adote">Adote</a></li>
         <li><a href="#perdidos">Perdidos</a></li>
-        <li><a href="#resgate">Reportar resgate</a></li>
+        <li><a href="cadastro.html">Reportar resgate</a></li>
         <li><a href="cadastro.html">Cadastro</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li><button class="btn-acessibilidade" onclick="alternarTema()" id="btn-tema" aria-label="Alternar tema claro/escuro e alto contraste">🌙</button></li>
+        <li><button class="btn-acessibilidade" onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">A−</button></li>
+        <li><span id="status-fonte" style="margin: 0 4px; color: white;">100%</span></li>
+        <li><button class="btn-acessibilidade" onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button></li>
      </ul>
     </nav>
   </header>
@@ -28,9 +33,9 @@
       <h1>Encontre seu novo melhor amigo</h1>
       <p>Ajude um animal a encontrar seu lar</p>
       <div class="botoessecao1">
-        <button>Adote um pet</button>
-        <button>Reportar resgate</button>
-        <button>Cadê meu dono?</button>
+        <button onclick="document.getElementById('adote').scrollIntoView({behavior: 'smooth'})">Adote um pet</button>
+        <button onclick="window.location.href='cadastro.html'">Reportar resgate</button>
+        <button onclick="document.getElementById('perdidos').scrollIntoView({behavior: 'smooth'})">Cadê meu dono?</button>
       </div>
     </div>
   </section>
@@ -42,37 +47,37 @@
         <img src="imagens/adotar01.jpg" alt="Animal 1" width="200" height="150">
         <h3>Paçoca</h3>
         <p>Um machinho, filhote, muito brincalhão e animado.</p>
-        <button>Adotar</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Adotar</button>
       </div>
       <div class="card">
         <img src="imagens/adotar02.jpg" alt="Animal 2">
         <h3>Lulu</h3>
         <p>Fêmea de porte pequeno, muito carinhosa e quietinha.</p>
-        <button>Adotar</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Adotar</button>
       </div>
       <div class="card">
         <img src="imagens/adotar03.jpg" alt="Animal 3">
         <h3>Juca</h3>
         <p>Caramelo adulto, de porte médio, muito gentil e leal.</p>
-        <button>Adotar</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Adotar</button>
       </div>
       <div class="card">
         <img src="imagens/adotar04.jpg" alt="Animal 4">
         <h3>Ciça</h3>
         <p>Gatinha fêmea observadora e independente.</p>
-        <button>Adotar</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Adotar</button>
       </div>
       <div class="card">
         <img src="imagens/adotar05.jpg" alt="Animal 5">
         <h3>Costelinha</h3>
         <p>Machinho filhote, grande e muito corajoso.</p>
-        <button>Adotar</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Adotar</button>
       </div>
       <div class="card">
         <img src="imagens/adotar08.jpg" alt="Animal 6 ">
         <h3>Sorte</h3>
         <p>Gatinha companheira e muito carinhosa.</p>
-        <button>Adotar</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Adotar</button>
       </div>
     </div>
   </section>
@@ -84,19 +89,19 @@
         <img src="imagens/adotar07.jpg" alt="Perdido 1">
         <h3>Último local onde foi visto:</h3>
         <p>Rua algodão doce, 432 - Bairro dos gatos</p>
-        <button>Encontrei!</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Encontrei!</button>
       </div>
       <div class="card">
         <img src="imagens/adotar06.jpg" alt="Perdido 2">
         <h3>Último local onde foi visto:</h3>
         <p>Rua pé de caqui, 234 - Bairro dos cachorros</p>
-        <button>Encontrei!</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Encontrei!</button>
       </div>
       <div class="card">
         <img src="imagens/adotar09.jpg" alt="Perdido 3">
         <h3>Último local onde foi visto:</h3>
         <p>Rua dos animais, 567 - Bairro dos bichos</p>
-        <button>Encontrei!</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Encontrei!</button>
       </div>
     </div>
   </section>
@@ -104,9 +109,9 @@
   <section id="resgate" class="secao4">
     <h2 class="titulo-secao4">Como ajudar?</h2>
     <div class="botoessecao4">
-        <button>Denunciar abandono</button>
-        <button>Ofercer lar temporário</button>
-        <button>Ser voluntário</button>
+        <button onclick="window.location.href='cadastro.html'">Denunciar abandono</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Oferecer lar temporário</button>
+        <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">Ser voluntário</button>
     </div>
   </section>
   <section id="contato" class="secao5">
@@ -139,5 +144,7 @@
     <p><a href="https://brieossa-dev.github.io/briossa-dev.github.io/" target="_blank">Curriculum Gabrielle</a></p>
     <p><a href="https://niicolegimenez.github.io/NicoleGimenez.github.io/" target="_blank">Curriculum Nicole</a></p>
   </footer>
+  
+  <script src="codigo.js"></script>
 </body>
 </html>

@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="acessibilidade.css">
     <title>Cadastro</title>
 </head>
 <body>
+  <header>
+    <img class="logo" src="imagens/logo2.png" alt="Miaudota">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#adote">Adote</a></li>
+        <li><a href="index.html#perdidos">Perdidos</a></li>
+        <li><a href="index.html#resgate">Reportar resgate</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li><button class="btn-acessibilidade" onclick="alternarTema()" id="btn-tema" aria-label="Alternar tema claro/escuro e alto contraste">🌙</button></li>
+        <li><button class="btn-acessibilidade" onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">A−</button></li>
+        <li><span id="status-fonte" style="margin: 0 4px; color: white;">100%</span></li>
+        <li><button class="btn-acessibilidade" onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button></li>
+     </ul>
+    </nav>
+  </header>
+  <main>
   <section id="cadastroAnimal">
     <h1>Cadastro de Animais Perdidos</h1>
     <form action="login.html">
@@ -86,4 +106,13 @@
       <button type="reset">Limpar cadastro</button>
     </form>
   </section>
+  </main>
+  <footer>
+    <p><a href="https://rochalais.github.io/front_end/" target="_blank">Curriculum Laís</a></p>
+    <p><a href="https://brieossa-dev.github.io/briossa-dev.github.io/" target="_blank">Curriculum Gabrielle</a></p>
+    <p><a href="https://niicolegimenez.github.io/NicoleGimenez.github.io/" target="_blank">Curriculum Nicole</a></p>
+  </footer>
+  
+  <script src="codigo.js"></script>
 </body>
+</html>

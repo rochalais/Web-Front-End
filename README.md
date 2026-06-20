@@ -1,6 +1,6 @@
 Sobre o Projeto
 
-O Miaudote é uma aplicação web desenvolvida com HTML e CSS, voltada para a adoção e resgate de animais. 
+O Miaudota é uma aplicação web desenvolvida com HTML, CSS e JavaScript, voltada para a adoção e resgate de animais.
 A plataforma tem como objetivo auxiliar a comunidade na divulgação de animais disponíveis para adoção, animais perdidos e casos de abandono que necessitam de resgate, incentivando a proteção animal e a adoção responsável.
 O projeto foi desenvolvido como atividade prática da disciplina de Programação Web Front-end.
 
@@ -18,6 +18,10 @@ Web-Front-End/
 ├── style.css
 │
 ├── cadastro.css
+│
+├── acessibilidade.css
+│
+├── codigo.js
 │
 ├── imagens/
 │   ├── adotar01.jpg
@@ -38,6 +42,16 @@ Web-Front-End/
 │
 └── README.md
 ```
+
+ Acessibilidade - ABNT NBR 17225
+
+O projeto implementa recursos de acessibilidade conforme a norma ABNT NBR 17225:
+
+- **ABNT 5.11 - Uso de cores:** tema claro/escuro e alto contraste 7:1 (preto e amarelo)
+- **ABNT 5.12 - Conteúdo textual:** ajuste de tamanho de fonte (80% a 150%) e espaçamento
+- Preferências salvas automaticamente via `localStorage`
+- Atalhos de teclado (`Alt+A`, `Alt+T`, `Alt+C`, `Alt++`, `Alt+-`)
+- Suporte a leitores de tela com `aria-live` e `aria-pressed`
 
 Integrantes da Equipe
 
